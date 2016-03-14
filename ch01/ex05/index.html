@@ -1,0 +1,16 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+	
+	<div ng-controller="MainCtrl">
+		<div>Outer: {{ outerval }}</div>
+		<div iso myattr="{{ outerval }}"></div>
+	</div>
+
+</div>
+</body>
+</html>

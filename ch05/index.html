@@ -1,0 +1,26 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+	
+	<my-listener local="outer">
+		<button ng-click="sendDown()">Send down</button>
+
+		<my-listener local="middle">
+			<my-listener local="first inner">
+				<button ng-click="sendUp()">Send first uo</button>
+			</my-listener>
+
+			<my-listener local="second inner">
+				<button ng-click="sendUp()">Send second up</button>
+			</my-listener>
+		</my-listener>
+
+	</my-listener>
+
+</div>
+</body>
+</html>

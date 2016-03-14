@@ -1,0 +1,18 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+	
+	<!-- register 'my-template.html' with $templateCashe usin ng-template -->
+	<script type="text/ng-template" id="my-template.html">
+		<div  ng-repeat="num in [1,2,3,4]">{{ num }}</div>
+	</script>
+
+	<my-directive></my-directive>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body>
+<div ng-app="myApp">
+	
+	<element-directive some-attr="myvalue">
+		<!-- content -->
+	</element-directive>
+
+	
+	<div attribute-directive="aval" some-attr="myvalue">
+	</div>
+
+	<div class="class-directive: cval; normal-class" some-attr="myvalue">
+	</div>
+
+	<!-- directive: comment-directive val1 val2 val3 -->
+
+</div>
+</body>
+</html>
